@@ -1,0 +1,16 @@
+.secili {
+    background:#66afe9;
+    color:#fff;
+}
+#onerilerIlyasBat{
+    padding:0;
+    border:1px solid #66afe9;
+    border-top:none;
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+}
+#onerilerIlyasBat a{
+    margin-top:3px;
+    padding:3px;
+}
