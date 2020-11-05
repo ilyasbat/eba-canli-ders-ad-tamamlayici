@@ -1,14 +1,15 @@
 {
   "name": "Eba Ders İsim Doldurucu",
   "version": "1.0",
-  "manifest_version": 1,
+  "manifest_version": 2,
   "description": "Bu eklenti sayesinde sayfa üzerindeki nesneleri otomatik değiştirblirisiniz.",
   "browser_action": {    "default_icon": "icon.png",    "default_popup" : "ilyasbat.html"  },
   "content_scripts":
   [
     {
-      "js": [ "jquery.js","veriler/ogretmenler.js","background.js" ],
+      "js": [ "jquery.js","background.js" ],
+      "css":["css/ilyasbat.css"],
       "matches": [ "http://ders.eba.gov.tr/", "https://ders.eba.gov.tr/*"]
     }
   ],
-  "permissions": [    "tabs"  ]}
+  "permissions": ["tabs","storage"]}
